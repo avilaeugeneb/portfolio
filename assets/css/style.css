@@ -1,8 +1,20 @@
-body {
-	/*background-color: #55B358;*/
+* {
+	padding: 0;
+	margin: 0;
 }
 
-.my-picture {
-	width: 250px;
-	border-radius: 50px;
+#main-section {
+	background-color: #55B358;
+}
+
+#portfolio-section {
+	background-color: #86D850;	
+}
+
+#skills-section {
+	background-color: #79A55C;
+}
+
+#about-section {
+	background-color: #62CE1A;
 }
