@@ -1,10 +1,41 @@
 * {
 	padding: 0;
 	margin: 0;
+	font-family: 'Roboto Slab', serif;
 }
 
 #main-section {
 	background-color: #55B358;
+}
+
+.about {
+	width: 60%;
+/*	margin: 0 auto;*/
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.my-picture {
+	height: 150px;
+	padding: 3px;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: white;
+	border-width: 5px;
+}
+
+h1 {
+	color: #fff;
+	font-size: 50px;
+	font-weight: normal;
+}
+
+.about h2 {
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 #portfolio-section {
@@ -18,3 +49,11 @@
 #about-section {
 	background-color: #62CE1A;
 }
+
+#main-section,
+#portfolio-section,
+#skills-section,
+#about-section {
+	height: 100vh;
+}
+
