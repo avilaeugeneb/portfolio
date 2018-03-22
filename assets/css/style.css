@@ -5,7 +5,11 @@
 }
 
 #main-section {
-	background-color: #55B358;
+	/*background-color: #55B358;*/
+	background-image: url("../img/bgpuzz.jpg");
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	background-size: cover;
 }
 
 section#main-section > a {
@@ -29,6 +33,9 @@ a[href="https://github.com/avilaeugeneb"] {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	background-color: rgba(75%, 77%, 75%, 0.6);
+	padding: 10px;
+	border-radius: 25px;
 }
 
 .my-picture {
