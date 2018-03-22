@@ -8,6 +8,19 @@
 	background-color: #55B358;
 }
 
+section#main-section > a {
+	color: white;
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+} 
+
+a[href="https://github.com/avilaeugeneb"] {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
 .about {
 	width: 60%;
 /*	margin: 0 auto;*/
@@ -43,11 +56,11 @@ h1 {
 }
 
 #skills-section {
-	background-color: #79A55C;
+	background-color: #55B358;
 }
 
 #about-section {
-	background-color: #62CE1A;
+	background-color: #86D850;
 }
 
 #main-section,
