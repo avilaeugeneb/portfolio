@@ -4,12 +4,16 @@
 	font-family: 'Roboto Slab', serif;
 }
 
-#main-section {
-	/*background-color: #55B358;*/
+body {
 	background-image: url("../img/bgpuzz.jpg");
 	background-repeat: no-repeat;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 	background-size: cover;
+}
+
+
+#main-section {
+	/*background-color: #55B358;*/
 }
 
 section#main-section > a {
@@ -19,14 +23,42 @@ section#main-section > a {
 	display: block;
 } 
 
-a[href="https://github.com/avilaeugeneb"] {
-	position: absolute;
-	top: 0;
-	right: 0;
+
+a > img {
+	width: 50px;
+	margin: 10px;
 }
 
+/* ICONs & Progress bar*/
+#iconav {
+	background-color: rgba(75%, 77%, 75%, 0.6);
+	position: -webkit-sticky;
+ 	position: sticky;
+  	top: 0;
+  	z-index: 1;
+}
+
+
+.progress-container {
+	width: 100%;
+  	height: 8px;
+  	background: #ccc;
+}
+
+.progress-bar {
+	height: 8px;
+  	background: #1F1409;
+  	width: 0%;
+}
+
+#iconav #leftico {
+	float: right;
+}
+
+/* About Section */
 .about {
-	width: 60%;
+	width: 70%;
+	height: 50%;
 /*	margin: 0 auto;*/
 	text-align: center;
 	position: absolute;
@@ -59,15 +91,15 @@ h1 {
 }
 
 #portfolio-section {
-	background-color: #86D850;	
+	/*background-color: #86D850;*/	
 }
 
 #skills-section {
-	background-color: #55B358;
+	/*background-color: #55B358;*/
 }
 
 #about-section {
-	background-color: #86D850;
+	/*background-color: #86D850;*/
 }
 
 #main-section,
