@@ -1,11 +1,48 @@
-// console.log('Hello world! I am ready for Full-stack Web Development.');
+/*************************/
+/**                     **/
+/**   Skills-chart      **/
+/**                     **/
+/*************************/
 
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+var ctxP = document.getElementById("skills-chart").getContext('2d');
+var myPieChart = new Chart(ctxP, {
+    type: 'pie',
+    data: {
+        labels: ["HTML", "CSS", "Bootstrap", "Javascript"],
+        datasets: [
+            {
+                data: [90, 80, 80, 50],
+                backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1"],
+                hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5"]
+            }
+        ]
+    },
+    options: {
+        responsive: true
+    }    
+});
 
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("my-bar").style.width = scrolled + "%";
-}
+
+/*************************/
+/**                     **/
+/**   Backend-chart      **/
+/**                     **/
+/*************************/
+
+var ctxP = document.getElementById("backend-chart").getContext('2d');
+var myPieChart = new Chart(ctxP, {
+    type: 'pie',
+    data: {
+        labels: ["MariaDB", "PHP", "Laravel"],
+        datasets: [
+            {
+                data: [90, 80, 80],
+                backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C"],
+                hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
+            }
+        ]
+    },
+    options: {
+        responsive: true
+    }    
+});

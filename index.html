@@ -1,64 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	
-	<title>Eugene Avila - My Web Developer Portfolio</title>
+	<title>Huge's Portfolio</title>
+
+	<!-- Font Awesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+	    crossorigin="anonymous"></script>
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-	
-	<!-- Font Awesome Icons -->
-	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Jua" rel="stylesheet">
 
-	<!-- Imports custom stylesheets -->
+	<!-- Import Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- Import MDB -->
+	<link rel="stylesheet" type="text/css" href="assets/css/mdb.min.css">
+
+	<!-- Import external stylesheet : Mobile-first -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Import medium device stylesheet -->
+	<link rel="stylesheet" media="only screen and (min-width: 768px) and (max-width: 992px)" href="assets/css/mediumscreen.css">
+
+	<!-- Import desktop stylesheet -->
+	<link rel="stylesheet" media="only screen and (min-width: 992px)" href="assets/css/desktopscreen.css">
+
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="0">
 
-	<main id="wrapper">
+	<nav class="navbar navbar-expand-lg navbar-dark unique-color-dark fixed-top scrolling-navbar">
+		
+		<!-- Navbar Brand -->
+		<a class="navbar-brand" href="#">Huge</a>
 
-		<nav id="iconav">
-			
-			<div id="logos">
-				<a href="https://www.facebook.com/eugenerationX" target="_blank">
-					<i class="fab fa-facebook"></i>
-				</a>
+		<!-- Button collapse -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-nav" aria-controls="top-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	    </button>
 
-				<a href="https://www.linkedin.com/in/eugene-avila-669247b3/" target="_blank">
-					<i class="fab fa-linkedin"></i>
-				</a>
+        <!-- Collapse Nav Content -->
+        <div class="collapse navbar-collapse" id="top-nav">
 
-				<a href="https://www.twitter.com" target="_blank">
-					<i class="fab fa-twitter-square"></i>
-				</a>
+        	<!-- Links -->
+        	 <div class="navbar-nav mr-auto">
+        	 	<a class="nav-item nav-link active" href="#main-section">Home <span class="sr-only">(current)</span></a>
+        	 	<a class="nav-item nav-link" href="#portfolio-section">Projects</a>
+        	 	<a class="nav-item nav-link" href="#skills-section">Skills</a>
+        	 	<a class="nav-item nav-link" href="#about-section">Contact</a>
+            </div>
 
-	   			<a href="mailto:avila.eugeneb@gmail.com">
-	   				<i class="far fa-envelope"></i>
-	   			</a>
+            <span class="navbar-text">You are welcome.</span>
 
-				<a href="https://github.com/avilaeugeneb" target="_blank">
-					<i class="fab fa-github-alt"></i>
-				</a>
+        </div> <!-- /endCollapseNavContent -->
 
-				<a href="https://instagram.com" target="_blank">
-					<i class="fab fa-instagram"></i>
-				</a>
-			</div> <!-- /#logos -->
+	</nav><!-- /end-Navbar -->
 
-			<div class="progress-container">
-				<div class="progress-bar" id="my-bar"></div>
-			</div> <!-- /.progress-container -->
-			
-		</nav> <!-- /#iconav -->
-
+	<main id="maingrid-wrapper">
+	
 		<section id="main-section">
 
-			<section class="inside-container">
-				
-				<img class="my-picture" src="assets/img/me.jpg">
+				<img class="my-picture img-fluid" src="assets/img/me.jpg">
 
 				<h1>Eugene B. Avila</h1>
 
@@ -66,16 +70,13 @@
 
 				<p class="bio">I love creating new stuff and I have a range of website ideas that I want to share to the world. I also have a passion on solving problems making being a Full-stack Web Developer an almost stress-free profession. I am a graduate of Tuitt Coding Bootcamp.</p>
 
-			</section> <!-- /.inside-container -->
-
-		</section>	<!-- /#main-section -->
+		</section> <!-- /end-main -->
 
 		<section id="portfolio-section">
 
 			<h2>Projects</h2>
-
-			<div id="portfolio-sect-1">
-
+			<div id="portfolio-wrap">
+				
 				<div class="portfolio-sect-2 sect-csp-1">
 					<img src="assets/img/cat.svg" alt="Capstone Project 1">
 					<h3>Capstone Project 1</h3>
@@ -115,22 +116,114 @@
 					</p>
 				</div>
 
-			</div> <!-- /#portfolio-sect-1 -->
-
-		</section> <!-- /#portfolio-section -->
+			</div>
+		</section> <!-- /end-portfolio -->
 
 		<section id="skills-section">
+
 			<h2>Skills</h2>
-		</section> <!-- /#skills-section -->
+
+				<div id="skills-sect">
+					<div class="skills-sect-1 frontend">
+						<h3>Front-End Development</h3>
+
+						<div class="skills-sect-2">
+							<p>Collection of front-end development badges.</p>
+
+							<canvas id="skills-chart"></canvas>
+                        
+						</div>
+					</div>
+					<div class="skills-sect-1 backend">
+						<h3>Back-End Development</h3>
+
+						<div class="skills-sect-2">
+							<p>Collection of back-end development badges.</p>
+
+							<canvas id="backend-chart"></canvas>
+						</div>
+					</div>		
+				</div>
+
+
+		</section>
 
 		<section id="about-section">
+
 			<h2>About</h2>
-		</section> <!-- /#about-section -->
 
-	</main> <!-- /main#wrapper -->
+				<div id="about-sect">
 
-	<!-- Imports custom scripts -->
-	<script type="text/javascript" src="assets/js/script.js"></script>
+					<div class="about-sect-1 about-1">
+						<h3> About Me </h3>
+
+						<div class="about-sect-2">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+							<footer>
+								<p>Copyright &copy; by Eugene Avila</p>
+							</footer>
+						</div>
+					</div> <!-- /.about-1 -->
+
+					<div class="about-sect-1 contact-1">
+						<h3> Contact Me </h3>
+
+						<div class="about-sect-2">
+							<form action="" method="">
+								<label for="username">Name</label>
+								<input type="text" name="username" id="username" placeholder="Enter your name">
+
+								<label for="useremail">Email Address</label>
+								<input type="email" name="useremail" id="useremail" placeholder="Enter your email address">
+
+								<label for="message">Message</label>
+								<textarea id="message" placeholder="Enter your message"></textarea>
+
+								<input type="submit" name="submit" value="Send message">
+							</form>
+						</div>
+					</div> <!-- /.contact-1 -->
+
+				</div> <!-- /#about-sect -->
+
+		</section>
+
+	</main>
+
+
+
+
+	<!-- Import Bootstrap jQuery -->
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<!-- Import Bootstrap Popper -->
+	<script src="assets/js/popper.min.js"></script>
+
+	<!-- Import MDB js -->
+	<script src="assets/js/mdb.min.js"></script>
+
+	<!-- Compiled plugins -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/script.js"></script>
 
 </body>
 </html>
