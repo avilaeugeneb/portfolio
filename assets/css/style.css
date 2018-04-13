@@ -10,6 +10,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	line-height: 1.6em;
+	text-align: center;
 }
 
 /*************************/
@@ -26,7 +27,7 @@ div#top-nav div a {
 
 /*************************/
 /**                     **/
-/**        Main         **/
+/**        Wrapper      **/
 /**                     **/
 /*************************/
 
@@ -39,17 +40,30 @@ main#maingrid-wrapper {
 /**      Sections       **/
 /**                     **/
 /*************************/
-section#main-section {
-	margin-top: -60px;
-}
 
 section#main-section,
 section#portfolio-section,
 section#skills-section,
 section#about-section {
+	margin-top: 60px;
+	margin-bottom: -60px;
 	min-height: 100vh;
 	border: 1px solid red;
 	padding-top: 60px;
+}
+
+section#about-section {
+	margin-bottom: 0;
+}
+
+/*************************/
+/**                     **/
+/**    Main Section     **/
+/**                     **/
+/*************************/
+
+section#main-section img {
+	width: 20%;
 }
 
 /*************************/
