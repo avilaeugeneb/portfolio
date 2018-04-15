@@ -69,7 +69,5 @@ $(document).ready(function() {
         loopBottom: true,
     });
 
-    $('#arrow').click(function () {
-        $.fn.pagepiling.moveSectionDown();
-    });
+    $('.logo').addClass('zoomInLeft');
 });

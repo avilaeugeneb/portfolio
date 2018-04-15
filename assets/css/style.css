@@ -24,22 +24,6 @@ h6,
 
 /*************************/
 /**                     **/
-/**       Nav Bar       **/
-/**                     **/
-/*************************/
-
-nav#fixedNav {
-	display: none;
-}
-
-nav.navbar a.navbar-brand, 
-div#top-nav div a {
-	text-transform: uppercase;
-}
-
-
-/*************************/
-/**                     **/
 /**        Wrapper      **/
 /**                     **/
 /*************************/
@@ -53,9 +37,10 @@ div#top-nav div a {
 div#main-section,
 div#portfolio-section,
 div#skills-section,
-div#about-section {
+div#contact-section {
 	height: 100vh;
-	padding: 10vh;
+	padding: 5vh;
+	background-color: cornsilk;
 }
 
 /*************************/
@@ -65,11 +50,36 @@ div#about-section {
 /*************************/
 
 div#main-section {
-	background-color: cornsilk;
+	/* background-color: cornsilk; */
 }
-div#main-section img {
-	width: 80vh;
-	transform: rotate(-10deg);
+
+	div#mainsection-grid {
+		display: grid; 
+		grid-template-columns: 1fr 1fr;
+	}
+
+div#img-holder {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}	
+
+	div#img-holder img {
+		width: 60%;
+		transform: rotate(-10deg);
+	}
+
+ul#grid-list {
+	list-style-type: none;
+	display: grid;
+	grid-gap: 1vh;
+}
+
+h1#next-banner {
+	text-align: right;
+	position: relative;
+	right: 20vh;
+	bottom: 10vh;
 }
 
 /*************************/
@@ -78,13 +88,20 @@ div#main-section img {
 /**                     **/
 /*************************/
 div#portfolio-section {
-	background-color: tomato;
+	/* background-color: tomato; */
 }
 
-div#portfolio-wrap {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-}
+	div#portfolio-wrap {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	div.portfolio-items {
+		text-align: center;
+	}
+	div.portfolio-items img{
+		width: 50%;
+	}
 
 
 /*************************/
@@ -93,7 +110,7 @@ div#portfolio-wrap {
 /**                     **/
 /*************************/
 div#skills-section {
-	background-color: aqua;
+	/* background-color: aqua; */
 }
 
 	div#skills-sect {
@@ -101,22 +118,27 @@ div#skills-section {
 		grid-template-columns: 1fr 1fr;
 	}
 
-canvas#skills-chart,
-canvas#backend-chart {
-	max-width: 50vw;
-}
+		canvas#skills-chart,
+		canvas#backend-chart {
+			max-width: 50vw;
+		}
 
 
 /*************************/
 /**                     **/
-/**    About-section    **/
+/**  Contact section    **/
 /**                     **/
 /*************************/
-div#about-section {
-	background-color: antiquewhite;
+div#contact-section {
+	/* background-color: antiquewhite; */
 }
 
-div#about-sect {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
+	div#contact-wrapper {
+		display: grid;
+		justify-items: center;
+		align-items: center;
+	}
+
+		div#contact-wrapper div#contact-form {
+			width: 50%;
+		}
