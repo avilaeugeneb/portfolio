@@ -10,7 +10,16 @@
 	margin: 0;
 	box-sizing: border-box;
 	line-height: 1.6em;
-	text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-nav a {
+	font-family: 'Jua', sans-serif;
 }
 
 /*************************/
@@ -18,6 +27,10 @@
 /**       Nav Bar       **/
 /**                     **/
 /*************************/
+
+nav#fixedNav {
+	display: none;
+}
 
 nav.navbar a.navbar-brand, 
 div#top-nav div a {
@@ -31,29 +44,18 @@ div#top-nav div a {
 /**                     **/
 /*************************/
 
-main#maingrid-wrapper {
-	border: 1px solid black;
-}
-
 /*************************/
 /**                     **/
 /**      Sections       **/
 /**                     **/
 /*************************/
 
-section#main-section,
-section#portfolio-section,
-section#skills-section,
-section#about-section {
-	margin-top: 60px;
-	margin-bottom: -60px;
-	min-height: 100vh;
-	border: 1px solid red;
-	padding-top: 60px;
-}
-
-section#about-section {
-	margin-bottom: 0;
+div#main-section,
+div#portfolio-section,
+div#skills-section,
+div#about-section {
+	height: 100vh;
+	padding: 10vh;
 }
 
 /*************************/
@@ -62,8 +64,12 @@ section#about-section {
 /**                     **/
 /*************************/
 
-section#main-section img {
-	width: 20%;
+div#main-section {
+	background-color: cornsilk;
+}
+div#main-section img {
+	width: 80vh;
+	transform: rotate(-10deg);
 }
 
 /*************************/
@@ -71,6 +77,10 @@ section#main-section img {
 /**      Portfolio      **/
 /**                     **/
 /*************************/
+div#portfolio-section {
+	background-color: tomato;
+}
+
 div#portfolio-wrap {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -82,11 +92,14 @@ div#portfolio-wrap {
 /**   Skills-section    **/
 /**                     **/
 /*************************/
-
-div#skills-sect {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+div#skills-section {
+	background-color: aqua;
 }
+
+	div#skills-sect {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 
 canvas#skills-chart,
 canvas#backend-chart {
@@ -99,7 +112,9 @@ canvas#backend-chart {
 /**    About-section    **/
 /**                     **/
 /*************************/
-
+div#about-section {
+	background-color: antiquewhite;
+}
 
 div#about-sect {
 	display: grid;

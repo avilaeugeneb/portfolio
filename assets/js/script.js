@@ -46,3 +46,30 @@ var myPieChart = new Chart(ctxP, {
         responsive: true
     }    
 });
+
+/*************************/
+/**                     **/
+/**      PagePiling     **/
+/**                     **/
+/*************************/
+
+$(document).ready(function() {
+	$('#pagepiling').pagepiling({
+        direction: 'horizontal',
+        scrollingSpeed: 1200,
+        onLeave: function (index, nextIndex, direction) {
+            if (nextIndex == 4) {
+                $('#pp-nav').fadeOut();
+            }
+            if (index == 4) {
+                $('#pp-nav').fadeIn();
+            }
+        },
+        loopTop: true,
+        loopBottom: true,
+    });
+
+    $('#arrow').click(function () {
+        $.fn.pagepiling.moveSectionDown();
+    });
+});
