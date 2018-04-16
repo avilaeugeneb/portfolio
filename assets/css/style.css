@@ -55,13 +55,13 @@ div#main-section {
 
 	div#mainsection-grid {
 		display: grid; 
-		grid-template-columns: 1fr 1fr;
 	}
 
 div#img-holder {
 	display: grid;
 	justify-items: center;
 	align-items: center;
+	display: none;
 }	
 
 	div#img-holder img {

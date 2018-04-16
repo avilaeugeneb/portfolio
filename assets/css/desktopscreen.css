@@ -1,0 +1,7 @@
+div#mainsection-grid {
+	grid-template-columns: 1fr 1fr;
+}
+
+div#img-holder {
+	display: block;
+}
